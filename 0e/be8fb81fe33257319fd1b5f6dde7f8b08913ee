@@ -1,0 +1,27 @@
+LICENSING.md
+  s_0213641ac58af6::t_219bfd8adaa340 1-29
+src/sdk.mjs
+  s_0213641ac58af6::t_a11a4267bb3895 1-116
+src/mcp.mjs
+  s_0213641ac58af6::t_c8da1634d2b706 1-70
+STORY.md
+  s_0213641ac58af6::t_c00da917ea1a4e 1-51
+test/mcp.test.mjs
+  s_0213641ac58af6::t_c4b6d06951135e 1-56
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "0ebe8fb81fe33257319fd1b5f6dde7f8b08913ee",
+  "prompts": {},
+  "sessions": {
+    "s_0213641ac58af6": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fdad44958ffe2zcFEsYI5CNOY1",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}
