@@ -1,0 +1,25 @@
+README.md
+  s_0213641ac58af6::t_f5585084199554 1-42
+src/wave-tunnel.mjs
+  s_0213641ac58af6::t_9862c800a054cc 1-94
+package.json
+  s_0213641ac58af6::t_980058b6c01c23 1-12
+test/wave-tunnel.test.mjs
+  s_0213641ac58af6::t_09665cb3c526e2 1-49
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "91a8207007adb3baa89e8b8027eb6c265315d3ca",
+  "prompts": {},
+  "sessions": {
+    "s_0213641ac58af6": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_fdad44958ffe2zcFEsYI5CNOY1",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}
