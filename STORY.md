@@ -13,7 +13,7 @@ address is a token; the token is the pipe.
 - `@wave-av/tunnel-sdk`: TunnelServer, TunnelClient, parseToken. One method per
   CLI verb.
 - `wave-tunnel-mcp`: agents open and probe tunnels with the same verbs.
-- License: BSD-3. Connector pricing: free tier plus org subscription. Never
+- License: Apache-2.0. Connector pricing: free tier plus org subscription. Never
   per-byte.
 - Skill `tailcat-tunnel-ops` so any agent runs this without asking.
 

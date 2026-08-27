@@ -2,7 +2,7 @@
 
 ## Upstream
 
-- **tailcat** (tailscale/tailcat): BSD-3-Clause, open-sourced at TailscaleUp, Aug 2026. We build
+- **tailcat** (tailscale/tailcat): BSD-3-Clause upstream, open-sourced at TailscaleUp, Aug 2026. We build
   against it, we do not fork it. The WAVE CLI/SDK wraps the tailcat BINARY or its Go library; no
   upstream code is copied into this repo.
 - **WireGuard-go / magicsock / netstack / DERP**: all consumed via the tailcat module; each is
@@ -10,8 +10,8 @@
 
 ## Ours
 
-- **wave-tunnel** (this repo): BSD-3-Clause (see LICENSE). Free to use, modify, redistribute -
-  including the built binaries.
+- **wave-tunnel** (this repo): Apache-2.0 (see LICENSE), the WAVE org standard enforced by the
+  license-policy audit. Free to use, modify, redistribute, including built binaries.
 - **The tunnel SERVICE** (gateway-minted tokens, the token registry, self-hosted relays): a WAVE
   connector product, governed by the connector law (meter-the-value-not-the-connector). Connector
   licensing:
