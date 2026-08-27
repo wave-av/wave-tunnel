@@ -1,0 +1,12 @@
+{
+  "name": "@wave-av/tunnel-cli",
+  "version": "0.1.0",
+  "type": "module",
+  "bin": { "wave-tunnel": "src/wave-tunnel.mjs" },
+  "description": "WAVE tunnel CLI — token-addressed, control-plane-free encrypted pipes (tailcat rail)",
+  "license": "BSD-3-Clause",
+  "repository": "github:wave-av/wave-tunnel",
+  "scripts": {
+    "test": "node --test test/"
+  }
+}
