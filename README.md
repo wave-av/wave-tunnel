@@ -1,6 +1,6 @@
 # wave-tunnel
 
-WAVE tunnel CLI — token-addressed, control-plane-free encrypted pipes on the
+WAVE tunnel CLI - token-addressed, control-plane-free encrypted pipes on the
 [tailcat](https://github.com/tailscale/tailcat) rail (BSD-3, no Tailscale control
 plane, no account, no root, WireGuard end-to-end encryption with DERP NAT
 traversal). Part of the `tailcat-tunnel-plane` epic (four renderings: API / CLI /
@@ -27,16 +27,16 @@ wave-tunnel parse <token>   # token contents as JSON (no connection)
 
 ## Laws carried in
 
-- **The token is the capability** — it never lands in git, logs, or transcripts;
+- **The token is the capability** - it never lands in git, logs, or transcripts;
   the registry is the token store (E2), and the store directory is gitignored.
-- **Connector, not meter** — a tunnel is an on-ramp: subscription/free, never
+- **Connector, not meter** - a tunnel is an on-ramp: subscription/free, never
   per-byte billing.
-- **Ephemeral by default** — saved keys only where a stable address is required.
-- **Self-hosted DERP first** — fleet traffic rides a WAVE derper before any prod
+- **Ephemeral by default** - saved keys only where a stable address is required.
+- **Self-hosted DERP first** - fleet traffic rides a WAVE derper before any prod
   use (epic hard-gate); the public relays are for probes only.
 
 ## Development
 
-`node src/wave-tunnel.mjs --help` — dependency-free wrapper; `tailcat` resolved
+`node src/wave-tunnel.mjs --help` - dependency-free wrapper; `tailcat` resolved
 from `WAVE_TAILCAT_BIN` or PATH. Exit codes: 0 success; 1 usage/tailcat failure;
 2 store failure.

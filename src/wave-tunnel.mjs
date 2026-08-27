@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-// wave-tunnel — the WAVE tunnel CLI (epic tailcat-tunnel-plane E1).
+// wave-tunnel - the WAVE tunnel CLI (epic tailcat-tunnel-plane E1).
 //
 // A thin, governed wrapper over the tailcat binary. The registry is the token
 // store: tokens are capabilities and follow the token law (print once, then
@@ -15,7 +15,7 @@ import { join } from "node:path";
 const TAILCAT = process.env.WAVE_TAILCAT_BIN || "tailcat";
 const STORE_DIR = process.env.WAVE_TUNNEL_STORE || join(homedir(), ".wave-tunnel");
 
-const usage = `wave-tunnel — token-addressed encrypted pipes (tailcat rail)
+const usage = `wave-tunnel - token-addressed encrypted pipes (tailcat rail)
 
 Usage:
   wave-tunnel serve [port]        listen; token printed ONCE, then stored

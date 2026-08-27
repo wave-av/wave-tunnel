@@ -9,7 +9,7 @@ const CLI = resolve(here, "..", "src", "wave-tunnel.mjs");
 
 test("--help prints usage and exits 0", () => {
   const out = execFileSync(process.execPath, [CLI, "--help"], { encoding: "utf8" });
-  assert.match(out, /wave-tunnel — token-addressed/);
+  assert.match(out, /wave-tunnel - token-addressed/);
   assert.match(out, /Exit codes: 0 success/);
 });
 

@@ -1,9 +1,10 @@
 {
-  "name": "@wave-av/tunnel-cli",
-  "version": "0.1.0",
+  "name": "@wave-av/tunnel-sdk",
+  "version": "0.2.0",
   "type": "module",
-  "bin": { "wave-tunnel": "src/wave-tunnel.mjs" },
-  "description": "WAVE tunnel CLI — token-addressed, control-plane-free encrypted pipes (tailcat rail)",
+  "bin": { "wave-tunnel": "src/wave-tunnel.mjs", "wave-tunnel-mcp": "src/mcp.mjs" },
+  "exports": { ".": "./src/sdk.mjs", "./mcp": "./src/mcp.mjs" },
+  "description": "WAVE tunnel SDK + CLI + MCP — token-addressed, control-plane-free encrypted pipes (tailcat rail)",
   "license": "BSD-3-Clause",
   "repository": "github:wave-av/wave-tunnel",
   "scripts": {
