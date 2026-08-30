@@ -1,0 +1,21 @@
+.gitleaks.toml
+  s_727a7865b9cf0a::t_8bf6cf458bcb24 1-46
+scripts/public-repo-guard/content-policy.sh
+  s_727a7865b9cf0a::t_fe972299f6a2ec 1-143
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "9ec4f49d1266910cbb60de0546f0376c9b27de04",
+  "prompts": {},
+  "sessions": {
+    "s_727a7865b9cf0a": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "9c4cb020-d377-430e-9356-a2a574828c3f",
+        "model": "claude-fable-5"
+      },
+      "human_author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}
