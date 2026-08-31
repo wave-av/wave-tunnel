@@ -1,2 +1,5 @@
 .wave-tunnel/
 node_modules/
+
+# testmd run receipts (generated; the contract's own notes ask for this)
+.testmd/receipts/
