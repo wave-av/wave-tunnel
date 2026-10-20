@@ -1,0 +1,24 @@
+.buildkite/pipeline.yml
+  h_af5ac1a9798224 86-101
+.buildkite/provenance/VERSION
+  h_af5ac1a9798224 1-12
+.buildkite/provenance/bin/emit-provenance.mjs
+  h_af5ac1a9798224 1-196
+.buildkite/provenance/lib/provenance.mjs
+  h_af5ac1a9798224 1-64
+.buildkite/provenance/schema/provenance.schema.json
+  h_af5ac1a9798224 1-134
+.buildkite/scripts/provenance-emit.sh
+  h_af5ac1a9798224 1-90
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "d0e271d6f8d5478d465a1d7e1fec92816a2945f8",
+  "prompts": {},
+  "humans": {
+    "h_af5ac1a9798224": {
+      "author": "Jake Fineman <jakefineman@gmail.com>"
+    }
+  }
+}
