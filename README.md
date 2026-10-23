@@ -40,3 +40,12 @@ wave-tunnel parse <token>   # token contents as JSON (no connection)
 `node src/wave-tunnel.mjs --help` - dependency-free wrapper; `tailcat` resolved
 from `WAVE_TAILCAT_BIN` or PATH. Exit codes: 0 success; 1 usage/tailcat failure;
 2 store failure.
+## Buildkite runbook
+
+`guard-content-policy` refuses fork PRs (`BUILDKITE_PULL_REQUEST_REPO !=
+BUILDKITE_REPO`) because secrets-queue steps consume host credentials.
+Trusted re-run procedure for a fork PR: (a) the host checks out the
+trusted base revision — not the PR head — for secrets-queue steps;
+(b) the host withholds secret injection for the fork build; (c) a
+manual approval gate is required before any trusted re-run. Never
+approve a re-run that executes PR-head code with host credentials.
