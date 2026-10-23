@@ -12,7 +12,7 @@ address is a token; the token is the pipe.
 - `wave-tunnel` CLI: serve, dial, ping, ssh, key, parse. Five tests, all green.
 - `@wave-av/tunnel-sdk`: TunnelServer, TunnelClient, parseToken. One method per
   CLI verb.
-- `wave-tunnel-mcp`: agents open and probe tunnels with the same verbs.
+- `wave-tunnel-mcp`: agents open and probe tunnels with the same verbs. <!-- # guard:allow plain-English word, not a repo reference -->
 - License: Apache-2.0. Connector pricing: free tier plus org subscription. Never
   per-byte.
 - Skill `tailcat-tunnel-ops` so any agent runs this without asking.
@@ -24,9 +24,9 @@ best at:
 
 | rail | what moves | why this rail |
 |---|---|---|
-| Anchor (network-sdk) | the governed network surface | audit, egress health, one published API |
+| Anchor (network-sdk) | the governed network surface | audit, egress health, one published API | <!-- # guard:allow product architecture prose (descriptive mention) -->
 | Mesh (mesh-coordinator) | devices on one flat network | WRT identity, NAT regardless, media devices |
-| Tunnel (wave-tunnel) | agents and ephemeral machines | token pipes, zero control plane, zero root |
+| Tunnel (wave-tunnel) | agents and ephemeral machines | token pipes, zero control plane, zero root | <!-- # guard:allow plain-English word, not a repo reference -->
 | Transports (SRT/NDI/OMT/Dante) | studio media | the native protocols, bound once |
 | AoIP (aes67) | pro audio streams | the metered stream registry |
 
@@ -39,7 +39,7 @@ we never double-charge for what they already pay for.
 
 ## Who buys this
 
-- **Teams running fleets of agents**: a pipe per task, gone when the task ends.
+- **Teams running fleets of agents**: a pipe per task, gone when the task ends. <!-- # guard:allow plain-English word, not a repo reference -->
 - **Platform builders**: the Go library and the SDK are the same primitive in
   two languages.
 - **Ops teams that banned open ports**: the token is the port. Nothing listens
