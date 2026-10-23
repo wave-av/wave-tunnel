@@ -24,6 +24,6 @@
 
 ## What this means for the product line
 
-The tunnel rail joins Anchor (network-sdk), Mesh (mesh-coordinator), Transports (SRT/NDI/OMT/Dante),
+The tunnel rail joins Anchor (network-sdk), Mesh (mesh-coordinator), Transports (SRT/NDI/OMT/Dante), <!-- # guard:allow product architecture prose (descriptive mention) -->
 and AoIP (aes67) in ONE WAVE transport plane. Each rail keeps its own license posture; the plane's
 common contract is the four renderings (API authority + CLI + SDK + MCP) and the token law.
