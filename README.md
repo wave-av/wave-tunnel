@@ -40,3 +40,19 @@ wave-tunnel parse <token>   # token contents as JSON (no connection)
 `node src/wave-tunnel.mjs --help` - dependency-free wrapper; `tailcat` resolved
 from `WAVE_TAILCAT_BIN` or PATH. Exit codes: 0 success; 1 usage/tailcat failure;
 2 store failure.
+## Buildkite runbook
+
+`guard-content-policy` refuses a build when the normalized repository
+identities differ: it compares host/owner/name (lowercased, scheme and
+`.git` suffix agnostic), so SSH-vs-HTTPS spellings of the same
+repository proceed while any other mismatch \u2014 including malformed or
+empty identities \u2014 refuses. Secrets-queue steps consume host
+credentials, so refusal is fail-closed (exit 2).
+Trusted re-run procedure for a fork PR: run the pipeline from the
+trusted base ref (a base-branch build) — never by re-running the fork
+build itself. A re-run of the fork build keeps fork metadata
+(`BUILDKITE_PULL_REQUEST_REPO` still points at the fork), so the guard
+still refuses it; only a build whose head is the trusted base proceeds.
+The host withholds secret injection from any fork build, and a manual
+approval gate is required before any trusted re-run. Never approve a
+re-run that executes PR-head code with host credentials.
